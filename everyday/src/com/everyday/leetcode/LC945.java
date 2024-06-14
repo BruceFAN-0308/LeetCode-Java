@@ -43,7 +43,7 @@ public class LC945 {
 
         // counter数组统计每个数字的个数。
         //（这里为了防止下面遍历counter的时候每次都走到40000，所以设置了一个max，这个数据量不设也行，再额外设置min也行）
-        int[] counter = new int[9];
+        int[] counter = new int[100002];
         int max = -1;
         for (int num: nums) {
             counter[num]++;
