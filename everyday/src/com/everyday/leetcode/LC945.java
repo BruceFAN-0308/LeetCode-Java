@@ -29,9 +29,10 @@ public class LC945 {
         int moves = 0;
 
         for (int i = 1; i < nums.length; i++) {
-            while (nums[i] <= nums[i - 1]) {
-                nums[i]++;
-                moves++;
+            if (nums[i] <= nums[i - 1]) {
+                int prev = nums[i];
+                nums[i] = nums[i - 1] + 1;
+                moves = moves + nums[i] - prev;
             }
         }
 
@@ -45,7 +46,7 @@ public class LC945 {
         //（这里为了防止下面遍历counter的时候每次都走到40000，所以设置了一个max，这个数据量不设也行，再额外设置min也行）
         int[] counter = new int[100002];
         int max = -1;
-        for (int num: nums) {
+        for (int num : nums) {
             counter[num]++;
             max = Math.max(max, num);
         }
