@@ -28,10 +28,7 @@ public class LC522 {
             }
             boolean isSubString = false;
             for (String key : strings) {
-                if (Objects.equals(key, string) || key.length() <= string.length()) {
-                    continue;
-                }
-                if (isSubString(key, string)) {
+                if (!Objects.equals(key, string) && key.length() > string.length() && isSubString(key, string)) {
                     isSubString = true;
                     break;
                 }
