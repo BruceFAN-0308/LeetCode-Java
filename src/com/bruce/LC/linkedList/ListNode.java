@@ -1,7 +1,7 @@
 package com.bruce.LC.linkedList;
 
 public class ListNode {
-    public Object val;
+    public int val;
     public ListNode next;
 
     public ListNode(int val) {
