@@ -1,5 +1,7 @@
 package com.bruce.LC.daily;
 
+import com.bruce.LC.linkedList.ListNode;
+
 /**
  * @description:
  * @author: Luoxin Fan
