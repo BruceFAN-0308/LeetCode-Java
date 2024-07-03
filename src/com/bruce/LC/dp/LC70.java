@@ -1,4 +1,4 @@
-package com.bruce.LC.dynamicProgramming;
+package com.bruce.LC.dp;
 
 /**
  * @description:

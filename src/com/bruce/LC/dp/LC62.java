@@ -1,4 +1,4 @@
-package com.bruce.LC.dynamicProgramming;
+package com.bruce.LC.dp;
 
 public class LC62 {
     public int uniquePaths(int m, int n) {
