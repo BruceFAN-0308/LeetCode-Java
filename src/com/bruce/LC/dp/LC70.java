@@ -1,30 +1,21 @@
 package com.bruce.LC.dp;
 
-/**
- * @description:
- * @author: Luoxin Fan
- * @create: 2024-06-19 21:51
- **/
 public class LC70 {
 
     public int climbStairs(int n) {
 
-        if (n == 1 || n == 0) {
+        if (n == 1) {
             return 1;
-        }
-        if (n == 2) {
-            return 2;
         }
         int first = 1;
         int second = 2;
-        int sum = 0;
-        for (int i = 3; i <= n; i++) {
-            sum = first + second;
+        for (int i = 2; i < n; i++) {
+            int third = first + second;
             first = second;
-            second = sum;
+            second = third;
         }
 
-        return sum;
+        return second;
     }
 
     public static void main(String[] args) {
