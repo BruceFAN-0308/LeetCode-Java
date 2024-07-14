@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Objects;
 
 public class LC1 {
+
     public int[] twoSum(int[] nums, int target) {
 
         HashMap<Integer, Integer> map = new HashMap<>();
@@ -16,7 +17,6 @@ public class LC1 {
         }
 
         return new int[]{0, 0};
-
     }
 
     public static void main(String[] args) {
